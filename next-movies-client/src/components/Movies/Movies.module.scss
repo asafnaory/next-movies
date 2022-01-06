@@ -1,0 +1,37 @@
+.movies-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    .movies {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        list-style-type: none;
+        width: 1500px;
+        padding: 0px;
+    }
+
+    .main-text {
+        display: flex;
+        width: 45%;
+        font-size: 3.3rem;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .movies-wrapper {
+        .movies {
+            width: 100%;
+        }
+        .main-text {
+            width: 75%;
+            font-size: 1.5rem;
+            // padding-left: px;
+        }
+    }
+}

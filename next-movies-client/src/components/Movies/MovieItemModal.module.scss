@@ -1,0 +1,120 @@
+.header {
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+}
+
+.runtime-wrapper {
+    display: flex;
+    flex-direction: row;
+    .runtime {
+        padding-left: 5px;
+        font-size: 1.7rem;
+    }
+}
+
+.content {
+    padding-top: 10px;
+    font-size: 1.2rem;
+}
+
+.img {
+    padding-top: 30px;
+    padding-left: 70px;
+    width: 35%;
+    height: 85%;
+}
+
+.rating {
+    display: flex;
+    flex-direction: row;
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+
+    .rating-text {
+        padding-top: 8px;
+        padding-left: 5px;
+        font-size: 1.2rem;
+    }
+}
+.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 420px;
+    padding-left: 100px;
+    margin-bottom: 10px;
+}
+.btn {
+    padding-bottom: 40px;
+    button {
+        border: 0.8px solid black;
+        background-color: white;
+        border-radius: 15px;
+        width: 180px;
+        height: 30px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        &:hover {
+            font-weight: bold;
+            cursor: pointer;
+        }
+    }
+
+    .arrow {
+        padding-left: 10px;
+    }
+    .btn-text {
+        padding-right: 10px;
+    }
+}
+@media only screen and (max-width: 768px) {
+    // .modal {
+    //     display: flex;
+    //     flex-direction: column;
+    //     flex-wrap: wrap;
+    //     justify-content: space-around;
+    //     top: 13vh;
+    //     z-index: 1;
+    //     background-color: white;
+    //     width: 350px;
+    //     height: 80%;
+    //     left: 22px;
+    // }
+    .img {
+        padding-top: 16px;
+        padding-left: 25px;
+        width: 85%;
+        height: 45%;
+    }
+    .header {
+        margin: 0;
+        font-size: 1.3rem;
+        width: 330px;
+    }
+    .runtime-wrapper {
+        .runtime {
+            font-size: 1.2rem;
+        }
+    }
+    .info {
+        width: 200px;
+        padding-left: 21px;
+        padding-right: 0px;
+        padding-top: 20px;
+        margin-bottom: 0px;
+    }
+    .btn {
+        padding-top: 15px;
+        padding-bottom: 5px;
+        button {
+            width: 299px;
+        }
+    }
+    .content {
+        padding-top: 3px;
+        font-size: 1rem;
+        width: 300px;
+    }
+}

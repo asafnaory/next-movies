@@ -1,0 +1,72 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: 0.3s;
+    padding: 2px 1px 20px 15px;
+    height: 500px;
+}
+.movie-data {
+    .name {
+        font-size: 25px;
+        width: 200px;
+        padding: 10px 0px 5px 0px;
+    }
+
+    .img {
+        width: 220px;
+        height: 300px;
+    }
+    .rating {
+        display: flex;
+        flex-direction: row;
+        .reating-text {
+            padding-top: 3px;
+            font-size: 22px;
+            padding-left: 3px;
+        }
+        .star {
+            font-size: 20px;
+        }
+    }
+}
+.read-more {
+    background-color: #00d7ff;
+    border: 0.8px solid black;
+    border-radius: 15px;
+    padding: 5px 0px 5px 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    &:hover {
+        font-weight: bold;
+        cursor: pointer;
+    }
+    .arrow {
+        padding-right: 10px;
+        font-size: 15px;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .card {
+        padding: 2px 2px 0px 2px;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        height: 420px;
+    }
+    .img {
+        max-width: 150px;
+        max-height: 200px;
+    }
+    .movie-data {
+        width: 165px;
+        display: flex;
+        flex-wrap: wrap;
+        .name{
+            font-size: 18px;
+        }
+    }
+    .read-more {
+        width: 150px;
+    }
+}

@@ -1,0 +1,42 @@
+.footer {
+  width: 100%;
+  height: 13rem;
+  background-color: #281c24;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 15px 0px 15px 0px;
+  bottom: 0;
+
+  .contact-us {
+    color: white;
+    margin: 10px;
+    font-size: 25px;
+  }
+  .text {
+    color: white;
+    margin: 1px;
+    font-size: 15px;
+  }
+
+  .small-logo-img {
+    width: 80px;
+    height: 60px;
+  }
+}
+
+.no-data {
+  position: absolute;
+}
+.social-media {
+  display: flex;
+  flex-direction: row;
+  padding-top: 20px;
+  padding-left: 30px;
+  .item {
+    padding-right: 25px;
+    width: 20px;
+    height: 20px;
+  }
+}

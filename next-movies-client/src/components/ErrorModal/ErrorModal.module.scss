@@ -1,0 +1,24 @@
+.error {
+    display: flex;
+    background-color: #00d7ff;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    border: 5px solid black;
+    border-radius: 15px;
+}
+
+.text {
+    margin-top: 90px;
+    font-size: 30px;
+    .image {
+        width: 150px;
+        height: 100px;
+    }
+    .next-time {
+        display: flex;
+    }
+    .time {
+        padding-left: 7px;
+    }
+}

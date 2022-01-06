@@ -1,0 +1,14 @@
+version: "3.8"
+services: 
+    backend:
+        build: './next-movies-server'
+        ports:
+            - '8080:8080'
+    frontend: 
+        build: './next-movies-client'
+        ports: 
+            - '3000:3000'
+        stdin_open: true
+        tty: true
+        depends_on: 
+            - backend

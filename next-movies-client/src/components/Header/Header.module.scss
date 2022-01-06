@@ -1,0 +1,46 @@
+.header {
+  width: 80%;
+  height: 7rem;
+  display: flex;
+  align-items: center;
+  padding: 0 10%;
+  justify-content: space-between;
+  background-color: white;
+
+  .logo-img {
+    width: 220px;
+    height: 85px;
+  }
+  .search-bar {
+    background-color: #00d7ff;
+    border-radius: 15px;
+    border: 1px solid black;
+    width: 230px;
+    height: 29px;
+  }
+
+  ::placeholder {
+    color: white;
+    padding-left: 8px;
+    font-family: "Times New Roman", Times, serif;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .header {
+    width: 85%;
+    flex-direction: column;
+    .logo-img {
+      width: 160px;
+      height: 65px;
+    }
+    .search-bar {
+      background-color: #00d7ff;
+      border-radius: 15px;
+      border: 1px solid black;
+      width: 200px;
+      height: 29px;
+      margin-bottom: 10px;
+    }
+  }
+}
